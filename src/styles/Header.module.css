@@ -1,0 +1,22 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image{
+    height: 60px;
+    width: 180px;
+}
+
+.links{
+    text-decoration: none;
+    font-size: 24px;
+    color: #FF6060;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.links:hover{
+    text-decoration: underline;
+}

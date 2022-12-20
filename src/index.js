@@ -7,7 +7,6 @@ import Apartments from './pages/Apartments'
 import Header from './components/Header';
 import About from './pages/About';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
