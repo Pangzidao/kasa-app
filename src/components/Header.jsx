@@ -5,7 +5,7 @@ import styles from "../styles/Header.module.css"
  
 function Header() {
     return (
-        <div className={styles.banner}>
+        <div className={styles.header}>
             <img src={logo} alt="logo" className={styles.image}></img>
             <nav>
                 <Link to="/" className={styles.links}>Accueil</Link>
@@ -15,5 +15,4 @@ function Header() {
         
     )
 }
-
 export default Header

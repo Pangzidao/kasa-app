@@ -6,18 +6,20 @@ import Home from './pages/Home'
 import Apartments from './pages/Apartments'
 import Header from './components/Header';
 import About from './pages/About';
+import Footer from './components/Footer';
+import PageError from './components/PageError';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/apartments" element={<Apartments />}/>
-        <Route path="/about" element={<About />}/>
-
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} errorElement={<PageError />}/>
+          <Route path="/apartments" element={<Apartments />} errorElement={<PageError />}/>
+          <Route path="/about" element={<About />} errorElement={<PageError />}/>
+        </Routes>
+      <Footer />
     </Router>
-  </React.StrictMode>
+  </React.Fragment>
 );

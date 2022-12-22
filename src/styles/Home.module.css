@@ -1,10 +1,32 @@
-.image{
-    position: absolute;
-    width: 1240px;
+.topSection{
+    width: 90%;
     height: 223px;
-    left: 100px;
-    top: 171px;
-
     border-radius: 25px;
-    filter: brightness(80%);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/home-top-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topSectionTitle{
+    color: white;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.apartmentsList{
+    height: fit-content;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vw;
+    background: #F7F7F7;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
