@@ -15,9 +15,10 @@ root.render(
     <Router>
       <Header />
         <Routes>
-          <Route path="/" element={<Home />} errorElement={<PageError />}/>
-          <Route path="/apartments" element={<Apartments />} errorElement={<PageError />}/>
-          <Route path="/about" element={<About />} errorElement={<PageError />}/>
+          <Route path="/" element={<Home />}/>
+          <Route path="/apartments" element={<Apartments />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="*" element={<PageError />}/>
         </Routes>
       <Footer />
     </Router>
