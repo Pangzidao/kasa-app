@@ -1,13 +1,14 @@
 import styles from "../styles/Home.module.css"
 import ApartmentCard from "../components/ApartmentCard";
 import apartments from "../datas/apartments.json";
-
 import React from 'react';
 
 const renderCards = () => {
   return apartments.map((apartment) => {
-    return <ApartmentCard key={apartment.id} name={apartment.title} image={apartment.cover} />
-  });
+    return (<div>
+              <ApartmentCard key={apartment.id} name={apartment.title} image={apartment.cover} />
+            </div>
+  )});
 };
 
 function Home() {
