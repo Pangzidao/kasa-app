@@ -1,0 +1,43 @@
+.carrousel{
+    width: 90%;
+    height: 415px;
+    border-radius: 25px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+  
+.backgroundPicture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px; 
+}
+
+.chevronLeft{
+    position: absolute;
+    top:320px;
+    left:70px;
+}
+
+.chevronLeft:hover{
+    cursor: pointer;
+}
+
+
+.chevronRight{
+    position: absolute;
+    top:320px;
+    right:70px;
+
+}
+
+.chevronRight:hover{
+    cursor: pointer;
+}
+.pictureIndex{
+    position: absolute;
+    top: 500px;
+    left: 48vw;
+    color: white;
+}

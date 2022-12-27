@@ -6,7 +6,7 @@ import React from 'react';
 const renderCards = () => {
   return apartments.map((apartment) => {
     return (<div>
-              <ApartmentCard key={apartment.id} name={apartment.title} image={apartment.cover} />
+              <ApartmentCard key={apartment.id} id={apartment.id} name={apartment.title} image={apartment.cover} />
             </div>
   )});
 };
