@@ -7,15 +7,19 @@ function Collapse(props){
     const [isOpen, setIsOpen] = useState(false)
  
     return isOpen ? (
-        <div>
-            <h2>{props.title}</h2>
-            <img className={styles.chevronUp} src={chevronUp} onClick={() => setIsOpen(false)} alt="open"/>
-            <span>{props.content}</span>
+        <div className={styles.collapse}>
+            <div className={styles.header}>
+                <h2 className={styles.title}>{props.title}</h2>
+                <img className={styles.chevronUp} src={chevronUp} onClick={() => setIsOpen(false)} alt="open"/>
+            </div>
+            <div className={styles.content}>{props.content}</div>
         </div>
     ) : (
-        <div>
-            <h2>{props.title}</h2>
-            <img className={styles.chevronDown} src={chevronDown} alt="close" onClick={() => setIsOpen(true)}/>
+        <div className={styles.collapse}>
+            <div className={styles.header}>
+                <h2 className={styles.title}>{props.title}</h2>
+                <img className={styles.chevronDown} src={chevronDown} onClick={() => setIsOpen(true)} alt="close"/>
+            </div>
         </div>
     )
 }

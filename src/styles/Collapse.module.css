@@ -1,7 +1,47 @@
+.collapse{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.title{
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+}
+
 .chevronDown{
-    background-color: red;
+    margin: 10px;
+    width: 20px;
+}
+
+.chevronDown:hover{
+    cursor: pointer;
 }
 
 .chevronUp{
-    background-color: red;
+    margin: 10px;
+    width: 20px;
 }
+
+.chevronUp:hover{
+    cursor: pointer;
+}
+
+.content{
+    background-color: #F6F6F6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+

@@ -1,5 +1,6 @@
 import filledStar from "../assets/star-filled.png"
 import emptyStar from "../assets/star-empty.png"
+import styles from "../styles/StarRating.module.css"
 
 function StarRating({ rating }){
     let starsFilled = []
@@ -11,7 +12,7 @@ function StarRating({ rating }){
         starsEmpty.push(<img src={emptyStar} alt="star" className="" key={i}/>)
     }
     return (
-      <div className="star-rating">
+      <div className={styles.starRating}>
         {starsFilled}{starsEmpty}
       </div>
     )
