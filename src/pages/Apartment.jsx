@@ -37,7 +37,7 @@ function Apartment(){
                                 </div>
                                 <img className={styles.picture} src={apartmentData.host.picture} alt={apartmentData.host.name}/>
                             </div>
-                            <StarRating rating={apartmentData.rating}/>
+                            <StarRating className={styles.rating} rating={apartmentData.rating}/>
                         </div>
                     </div>
                    <div className={styles.collapsesContainer}>

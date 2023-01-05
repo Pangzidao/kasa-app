@@ -12,30 +12,37 @@
 .titleTags{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    max-width: 65%;
 }
 .title{
     color: #FF6060;
     font-size: 36px;
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 .subtitle{
     color: #FF6060;
     font-size: 18px;
     font-weight: 500;
+    margin-top: 0;
 }
 
 .tagsContainer{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tags{
     margin-right: 10px;
+    margin-bottom: 0;
     background-color: #FF6060;
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     color:white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     border-radius: 25px;
 }
@@ -53,19 +60,18 @@
 }
 
 .name{
-    width: 100px;
     color: #FF6060;
     size: 18px;
     text-align: end;
-    font-weight: 500;
+    font-weight: 900;
     margin: 10px;
 }
 
 .picture{
     border-radius: 50%;
     margin: 10px;
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
 }
 
 .collapsesContainer{
@@ -73,8 +79,57 @@
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .collapse{
     width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .bodyHeader{
+        flex-direction: column;
+    }
+
+    .titleTags{
+        max-width: 100%;
+    }
+    .pictureRating{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .rating{
+        order:1;
+    }
+
+    .namePicture{
+        order: 2;
+    }
+
+    .collapse{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 14px;
+    }
+
+    .tags{
+        font-size: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .picture{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+
 }

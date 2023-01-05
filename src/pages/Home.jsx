@@ -13,7 +13,7 @@ const renderCards = () => {
 
 function Home() {
   return (
-  <div>
+  <div className={styles.homeBody}>
     <div className={styles.topSection}>
       <h2 className={styles.topSectionTitle}>Chez vous, partout et ailleurs</h2>
     </div>

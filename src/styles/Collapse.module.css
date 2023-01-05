@@ -1,5 +1,7 @@
 .collapse{
     width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .header{
@@ -8,17 +10,21 @@
     align-items: center;
     background-color: #FF6060;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 99;
+    position: relative;
 }
 
 .title{
     color: white;
-    font-size: 24px;
-    margin: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .chevronDown{
-    margin: 10px;
+    margin-right: 10px;
     width: 20px;
 }
 
@@ -27,7 +33,7 @@
 }
 
 .chevronUp{
-    margin: 10px;
+    margin-right: 10px;
     width: 20px;
 }
 
@@ -43,5 +49,18 @@
     padding-left: 15px;
     padding-bottom: 15px;
     padding-right: 15px;
+    z-index: -1;
+    margin-top: -10px;
 }
 
+@media screen and (max-width: 600px){
+
+    .title{
+    font-size: 14px;
+    }
+
+    .content{
+    font-size:14px;
+    }
+
+}

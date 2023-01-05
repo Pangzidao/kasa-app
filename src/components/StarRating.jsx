@@ -6,19 +6,16 @@ function StarRating({ rating }){
     let starsFilled = []
     let starsEmpty = []
     for (let i = 0; i < rating; i++) {
-      starsFilled.push(<img src={filledStar} alt="star" className="" key={i}/>);
+      starsFilled.push(<img className={styles.star} src={filledStar} alt="star" key={i}/>);
     }
     for (let i = 0; i < 5 - rating; i++){
-        starsEmpty.push(<img src={emptyStar} alt="star" className="" key={i}/>)
+        starsEmpty.push(<img className={styles.star} src={emptyStar} alt="star" key={i}/>)
     }
     return (
-      <div className={styles.starRating}>
+      <div className={styles.starContainer}>
         {starsFilled}{starsEmpty}
       </div>
     )
-
-    
-
   }
 
 export default StarRating

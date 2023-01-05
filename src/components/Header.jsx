@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className={styles.header}>
             <img src={logo} alt="logo" className={styles.image}></img>
-            <nav>
+            <nav className={styles.linksContainer}>
                 <Link to="/" className={styles.links}>Accueil</Link>
                 <Link to="/about" className={styles.links}>À Propos</Link>
             </nav>

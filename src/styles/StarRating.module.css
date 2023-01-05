@@ -1,3 +1,10 @@
-.starRating{
-    padding: 10px;
+.starContainer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 600px){
+    .star{
+        width: 25px;
+    }
 }
