@@ -3,6 +3,7 @@
     height: 415px;
     border-radius: 25px;
     margin:5vw;
+    position: relative;
 }
   
 .backgroundPicture {
@@ -15,8 +16,8 @@
 
 .chevronLeft{
     position: absolute;
-    top:320px;
-    left:80px;
+    top:45%;
+    left:30px;
 }
 
 .chevronLeft:hover{
@@ -26,8 +27,8 @@
 
 .chevronRight{
     position: absolute;
-    top:320px;
-    right:80px;
+    top:45%;
+    right:30px;
 
 }
 
@@ -36,19 +37,19 @@
 }
 .pictureIndex{
     position: absolute;
-    bottom: 20px;
-    left: 48vw;
+    bottom: 10px;
+    left: 47%;
     color: white;
 }
 
 @media screen and (max-width: 600px){
     .chevronLeft{
         width: 20px;
-        left: 40px;
+        left: 20px;
     }
 
     .chevronRight{
         width: 20px;
-        right: 40px;
+        right: 20px;
     }
 }
