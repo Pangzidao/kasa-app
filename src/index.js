@@ -7,7 +7,7 @@ import Apartment from './pages/Apartment'
 import Header from './components/Header';
 import About from './pages/About';
 import Footer from './components/Footer';
-import PageError from './components/PageError';
+import PageError from './pages/PageError';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

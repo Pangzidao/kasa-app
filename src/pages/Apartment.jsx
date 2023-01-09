@@ -1,7 +1,7 @@
 import apartments from "../datas/apartments.json";
 import { useParams } from 'react-router-dom'
 import Carrousel from "../components/Carrousel";
-import PageError from "../components/PageError";
+import PageError from "./PageError";
 import Collapse from "../components/Collapse";
 import StarRating from "../components/StarRating";
 import styles from "../styles/Apartment.module.css"
@@ -10,11 +10,12 @@ import styles from "../styles/Apartment.module.css"
 function Apartment(){
     const { apartmentId } = useParams()
     const apartmentData = apartments.find(apartment => apartment.id === apartmentId)
-    const firstNameLastName = apartmentData.host.name.split(" ")
-    const firstName = firstNameLastName[0]
-    const lastName = firstNameLastName[1]
+    
     
     if (apartmentData){
+        const firstNameLastName = apartmentData.host.name.split(" ")
+        const firstName = firstNameLastName[0]
+        const lastName = firstNameLastName[1]
         return (
             <div>
                 <Carrousel pictures={apartmentData.pictures}/>
@@ -56,10 +57,10 @@ function Apartment(){
                 
             </div>
         )
-    }else{
-        return (
-            <PageError />
-        )
+        }else{
+            return (
+                <PageError />
+            )
     }
 }
 
