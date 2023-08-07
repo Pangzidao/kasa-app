@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/kasa-app/static/css/main.d0911d39.css",
+    "main.js": "/kasa-app/static/js/main.559313d4.js",
+    "static/media/home-top-image.png": "/kasa-app/static/media/home-top-image.f6c64703fbd90f036795.png",
+    "static/media/about-top-image.png": "/kasa-app/static/media/about-top-image.20103b92dd11f396bf80.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/kasa-app/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/logo.png": "/kasa-app/static/media/logo.be342bc9a9c41fbaa220.png",
+    "index.html": "/kasa-app/index.html",
+    "main.d0911d39.css.map": "/kasa-app/static/css/main.d0911d39.css.map",
+    "main.559313d4.js.map": "/kasa-app/static/js/main.559313d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0911d39.css",
+    "static/js/main.559313d4.js"
+  ]
+}
